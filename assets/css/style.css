@@ -1,0 +1,39 @@
+#agendamento {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+#agendamento h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#agendamento form {
+    display: flex;
+    flex-direction: column;
+}
+
+#agendamento label {
+    margin: 10px 0 5px;
+}
+
+#agendamento input, #agendamento select, #agendamento button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#agendamento button {
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+#agendamento button:hover {
+    background: #0056b3;
+}
