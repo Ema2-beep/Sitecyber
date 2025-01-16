@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - DayTech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-container h2 {
+      color: #ff7700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    .form-group input:focus {
+      border-color: #ff7700;
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background: #ff7700;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn-login:hover {
+      background: #e56600;
+    }
+
+    .text-center {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .text-center a {
+      color: #ff7700;
+      text-decoration: none;
+    }
+
+    .text-center a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login - DayTech</h2>
+    <form action="login_process.php" method="POST">
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+      </div>
+      <button type="submit" class="btn-login">Entrar</button>
+      <div class="text-center">
+        <p>Area reservada! <a href="index.html">Voltar ao site</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
